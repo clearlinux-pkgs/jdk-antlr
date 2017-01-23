@@ -95,9 +95,9 @@ xmvn-install  -R .xmvn-reactor -n antlr -d %{buildroot}
 mkdir -p %{buildroot}{/usr/include/antlr,/usr/lib64,/usr/bin}
 install -p -m 755 %{SOURCE3} %{buildroot}/usr/bin
 
-install -p -m 644 lib/cpp/antlr/*.hpp $RPM_BUILD_ROOT/usr/include/antlr
-install -p -m 644 lib/cpp/src/libantlr.a $RPM_BUILD_ROOT/usr/lib64
-install -p -m 755 scripts/antlr-config $RPM_BUILD_ROOT/usr/bin
+install -p -m 644 lib/cpp/antlr/*.hpp %{buildroot}/usr/include/antlr
+install -p -m 644 lib/cpp/src/libantlr.a %{buildroot}/usr/lib64
+install -p -m 755 scripts/antlr-config %{buildroot}/usr/bin
 
 pushd lib/python 
 python2 -tt setup.py build -b py2 install --root=%{buildroot}
