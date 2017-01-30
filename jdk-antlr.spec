@@ -1,6 +1,6 @@
 Name     : jdk-antlr
 Version  : 2.7.7
-Release  : 2
+Release  : 3
 URL      : http://www.antlr2.org/download/antlr-2.7.7.tar.gz
 Source0  : http://www.antlr2.org/download/antlr-2.7.7.tar.gz
 Source1  : http://repo2.maven.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
